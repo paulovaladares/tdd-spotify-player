@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import convertToHumanTime from '../src/ConvertToHumanTime';
 
 function createMarkup(tracks) {
@@ -13,7 +14,7 @@ function createMarkup(tracks) {
     .join('');
 }
 
-export default function renderAlbumTracks(data, elemnt) {
+export default function renderAlbumTracks(data, element) {
   const markup = createMarkup(data);
-  elemnt.innerHTML = markup;
+  element.innerHTML = markup;
 }
