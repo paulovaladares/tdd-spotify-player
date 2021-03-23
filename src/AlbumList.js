@@ -2,7 +2,7 @@
 function createMarkup(data) {
   return data
     .map(
-      (album) => `
+      album => `
     <div class="list-item">
       <img src="${album.images[2].url}" alt="${album.name}" lass="list-image">
       <div class="list-description">
